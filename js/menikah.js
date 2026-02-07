@@ -33,25 +33,91 @@ $(document).on("click", 'a[href^="#"]', function(event) {
   );
 });
 
-// When the user scrolls down 20px from the top of the document, show the scroll up button
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
-  } else {
-    document.getElementById("toTop").style.display = "none";
-  }
-}
 
 // Preloader
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
 });
-$(window).load(function() {
-  var Body = $("body");
-  Body.addClass("preloader-site");
+$(window).on("load", function () {
+  $("body").addClass("preloader-site");
 });
+
+//komentar
+// =================== FIREBASE KOMENTAR ===================
+let db;
+
+// INIT FIREBASE
+document.addEventListener("DOMContentLoaded", function () {
+  const firebaseConfig = {
+    apiKey: "AIzaSyByHikI_6s9bdwv_9dkOLTbZP9VUiJdx8s",
+    authDomain: "undangan-cece.firebaseapp.com",
+    databaseURL: "https://undangan-cece-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "undangan-cece",
+    storageBucket: "undangan-cece.firebasestorage.app",
+    messagingSenderId: "679637776486",
+    appId: "1:679637776486:web:933f4b56400646acad95a7"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.database();
+
+  // LISTEN KOMENTAR (REALTIME)
+  db.ref("ucapan").on("value", function(snapshot) {
+    const list = document.getElementById("list-ucapan");
+    if (!list) return;
+
+    list.innerHTML = "";
+
+    snapshot.forEach(function(child) {
+      const data = child.val();
+      const div = document.createElement("div");
+      div.className = "box";
+      div.innerHTML = `
+        <strong>${data.nama}</strong>
+        <p>${data.pesan}</p>
+      `;
+      list.prepend(div); // terbaru di atas
+    });
+  });
+});
+
+// =================== KIRIM UCAPAN (GLOBAL) ===================
+function kirimUcapan() {
+  if (!db) {
+    alert("Database belum siap, coba refresh halaman");
+    return;
+  }
+
+  const nama = document.getElementById("nama").value.trim();
+  const pesan = document.getElementById("pesan").value.trim();
+
+  if (!nama || !pesan) {
+    alert("Nama dan ucapan wajib diisi");
+    return;
+  }
+
+  db.ref("ucapan").push({
+    nama: nama,
+    pesan: pesan,
+    waktu: Date.now()
+  });
+
+  document.getElementById("nama").value = "";
+  document.getElementById("pesan").value = "";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const nama = params.get("to");
+
+  const target = document.getElementById("nama-undangan");
+
+  if (nama && target) {
+    target.innerText = decodeURIComponent(nama.replace(/\+/g, " "));
+  } else if (target) {
+    target.innerText = "Tamu Undangan";
+  }
+});
+
+

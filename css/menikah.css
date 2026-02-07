@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap");
 .has-vertically-aligned-content {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: 'Raleway', Tahoma, sans-serif;
+  font-family: 'Poppins', Tahoma, sans-serif;
   width: 100%;
   min-height: 100%;
 }
@@ -29,17 +29,17 @@ html {
 }
 
 .navbar-item.is-active{
-  border-bottom: 2px solid #996E6D;
+  border-bottom: 2px solid #6A4C93;
 }
 
 .a.navbar-item{
-  font-color: #996E6D;
+  font-color: #6A4C93;
 }
 
 
 .hero {
   background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background: linear-gradient(rgba(106, 76, 147, 0.75), rgba(106, 76, 147, 0.75)), rgba(0, 0, 0, 0.4) url("https://picsum.photos/id/381/1920/1080") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -50,9 +50,9 @@ html {
 
 
 .hero .title {
-  font-family: 'Rouge Script', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 700;
-  transform: rotate(-2deg);
+  transform: none;
   font-size: 5rem;
   padding-bottom: 5px;
   color: whitesmoke;
@@ -102,15 +102,15 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid #996E6D;
+  border-bottom: 2px solid #6A4C93;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: #996E6D;
+  color: #6A4C93;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-  color: #996E6D;
+  color: #6A4C93;
   transition: all .2s ease-in-out;
   border-bottom: 2px solid #c28285;
 }
@@ -131,12 +131,12 @@ html {
 }
 
 .main-content .section-dark {
-  background-color: #F4E2E2;
+  background-color: #F3EDF9;
   padding: 80px 40px;
 }
 
 .main-content .section-darker {
-  background-color: #EDD2D1;
+  background-color: #E6DCF4;
   padding: 80px 40px;
 }
 
@@ -157,9 +157,9 @@ html {
 }
 
 .main-content .section-dark.resume button {
-  border: 2px solid #996E6D;
+  border: 2px solid #6A4C93;
   background: white;
-  color: #996E6D;
+  color: #6A4C93;
   height: 50px;
   width: 250px;
   font-size: 1rem;
@@ -167,7 +167,7 @@ html {
 }
 
 .main-content .section-dark.resume .fa-download {
-  color: #996E6D;
+  color: #6A4C93;
 }
 
 .main-content .section-dark.my-work {
@@ -273,7 +273,7 @@ html {
 
 .main-content .section-color.pertanyaan {
   padding: 100px;
-  background-color: #996E6D;
+  background-color: #6A4C93;
   color: white;
 }
 
@@ -290,7 +290,7 @@ html {
 .main-content .section-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  color: #996E6D;
+  color: #6A4C93;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0px;
@@ -298,9 +298,9 @@ html {
 }
 
 .nama-lengkap {
-  font-family: 'Rouge Script', sans-serif;
-  color: #996E6D;
-  font-size: 3.5rem;
+  font-family: 'Playfair Display', sans-serif;
+  color: #6A4C93;
+  font-size: 3.2rem;
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
@@ -309,7 +309,7 @@ html {
 .ampersand {
 font-size: 5rem;
 font-family: 'Rouge Script', sans-serif;
-color: #996E6D;
+color: #6A4C93;
 line-height: 5rem;
 display: inline-block;
 vertical-align: middle;
@@ -406,7 +406,7 @@ vertical-align: middle;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #996E6D;
+  background-color: #6A4C93;
   color: white;
   cursor: pointer;
   border-radius: 50%;
@@ -419,18 +419,18 @@ vertical-align: middle;
 }
 
 #toTop:hover {
-  background-color: #BC8887;
+  background-color: #8F6BC2;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #F4E2E2;
+  background-color: #F3EDF9;
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 6px #996E6D;
-  -webkit-box-shadow: inset 0 0 6px #996E6D;
-  background-color: #BC8887;
+  box-shadow: inset 0 0 6px #6A4C93;
+  -webkit-box-shadow: inset 0 0 6px #6A4C93;
+  background-color: #8F6BC2;
 }
 
 body.preloader-site {
@@ -500,12 +500,12 @@ body.preloader-site {
 }
 
 .btn-cta {
-  background-color: #996E6D;
+  background-color: #6A4C93;
   width:  210px;
   height: 65px;
   color: white;
   font-size: 1.2rem;
-  border: 2px solid #996E6D;
+  border: 2px solid #6A4C93;
   border-radius: 10px;
   align-items: center;
   margin: 1rem;
@@ -554,10 +554,10 @@ body.preloader-site {
 
 
 .dusty-pink {color: #D8A9A8}
-.dusty-pink-lighter {color: #EDD2D1}
-.dusty-pink-lightest {color: #F4E2E2}
-.dusty-pink-darker {color: #BC8887}
-.dusty-pink-darkest {color: #996E6D}
+.dusty-pink-lighter {color: #E6DCF4}
+.dusty-pink-lightest {color: #F3EDF9}
+.dusty-pink-darker {color: #8F6BC2}
+.dusty-pink-darkest {color: #6A4C93}
 
 .tile {
   border-radius: 10px;
@@ -643,7 +643,7 @@ body.preloader-site {
 }
 
 .instagram {
-  color: #996E6D;
+  color: #6A4C93;
   font-size: 1.25rem;
   font-weight: 900;
   margin-top: 0.5rem;
@@ -652,3 +652,98 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
+/* ======================
+   KOMENTAR / UCAPAN
+   ====================== */
+
+.komentar-box {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 10px 6px;
+  margin-top: 20px;
+  scrollbar-width: thin;
+}
+
+/* scrollbar chrome */
+.komentar-box::-webkit-scrollbar {
+  width: 6px;
+}
+.komentar-box::-webkit-scrollbar-thumb {
+  background-color: #c8a1a0;
+  border-radius: 10px;
+}
+
+/* kartu komentar */
+.komentar-box .box {
+    background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  box-shadow:
+    0 20px 40px rgba(106, 76, 147, 0.18),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(106, 76, 147, 0.15);
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  position: static;
+  inset: -1px;
+  border-radius: 22 px;
+  background: linear-gradient(
+    135deg,
+    rgba(143, 107, 194, 0.35),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: -1;
+}
+
+/* nama */
+.komentar-box strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6A4C93;
+  margin-bottom: 6px;
+}
+
+/* isi pesan */
+.komentar-box p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Kotak Nama Undangan */
+.kotak-undangan {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 16px 22px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-align: center;
+  max-width: 90%;
+}
+
+/* Teks kecil "Kepada Yth." */
+.label-undangan {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* Nama tamu */
+.nama-undangan {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+  line-height: 1.4;
+}
+
+
