@@ -114,33 +114,9 @@
               
             </h4>
           </div>
+          <div class="spasi"> </div>
           <!-- Start Countdown -->       
-          <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-  var harih = '06/16/2026 09:00:00';
-
-  $('#hitungmundur').countdown({
-    date: harih,
-    offset: +7, // WIB
-    day: 'Hari',
-    days: 'Hari'
-  }, function () {
-    console.log('Acara dimulai');
-  });
-</script>
-
-          </div>
+      
           <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
@@ -216,6 +192,56 @@
       </section>
       <!-- End regular-section-->    
       
+      <!-- ayat alquran-->
+      <!-- ======================
+     SECTION AYAT AL-QURAN
+====================== -->
+<section class="section-ayat">
+  <div class="container has-text-centered" data-aos="fade-up">
+
+    <h1 class="title section-ayat-title">
+      Ayat Al-Qur’an
+    </h1>
+
+    <!-- Ayat 1 -->
+    <div class="ayat-box">
+      <p class="ayat-arab">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+        لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+      </p>
+
+      <p class="ayat-arti">
+        “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+        pasangan-pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram
+        kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
+      </p>
+
+      <p class="ayat-sumber">
+        (QS. Ar-Rum: 21)
+      </p>
+    </div>
+
+    <!-- Ayat 2 -->
+    <div class="ayat-box">
+      <p class="ayat-arab">
+        رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ
+      </p>
+
+      <p class="ayat-arti">
+        “Ya Tuhan kami, anugerahkanlah kepada kami pasangan dan keturunan
+        sebagai penyejuk mata (kami).”
+      </p>
+
+      <p class="ayat-sumber">
+        (QS. Al-Furqan: 74)
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
       <!-- Begin Waktu Section -->
       <section class="section-dark" id="Waktu">
         <div class="container">
@@ -257,6 +283,32 @@
 
           </div>
         </div>
+
+          <div>
+            <ul id="hitungmundur" data-aos="fade-up" data-aos-easing="linear">
+              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+            </ul>
+            
+            </div>
+            <script type="text/javascript">
+  var harih = '06/16/2026 09:00:00';
+
+  $('#hitungmundur').countdown({
+    date: harih,
+    offset: +7, // WIB
+    day: 'Hari',
+    days: 'Hari'
+  }, function () {
+    console.log('Acara dimulai');
+  });
+</script>
+
         <div class="space40px"></div>
         <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
           <a href="https://calendar.google.com/calendar/render?action=TEMPLATE
@@ -305,12 +357,12 @@ class="button has-tooltip btn-cta">
       <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
     <section class="section-light regular-section" id="ucapan">
         <div class="container">
-         <h1 class="title has-text-centered section-title">
+         <h1 class="title has-text-centered section-title" data-aos="fade-up">
       Ucapan & Doa
     </h1>
 
     <!-- Form -->
-    <div class="box">
+    <div class="box" data-aos="fade-up">
       <div class="field">
         <label class="label">Nama</label>
         <input id="nama" class="input" placeholder="Nama Anda">
@@ -334,7 +386,7 @@ class="button has-tooltip btn-cta">
         <div class="container">
           <div class="columns is-multiline">          
             <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Ucapan Terimakasih</h1>
             </div>
             <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
               <p class="h2 subtitle">

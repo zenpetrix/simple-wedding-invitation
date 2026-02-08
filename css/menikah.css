@@ -746,4 +746,167 @@ body.preloader-site {
   line-height: 1.4;
 }
 
+/* ======================
+   HITUNG MUNDUR / COUNTDOWN
+====================== */
+
+#hitungmundur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  margin: 30px auto;
+  list-style: none;
+}
+
+#hitungmundur li {
+  list-style:;
+}
+
+/* KOTAK ANGKA */
+#hitungmundur li span {
+  display: block;
+  min-width: 70px;
+  padding: 14px 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6A4C93;
+  text-align: center;
+}
+
+/* TEKS (Hari, Jam, Menit, Detik) */
+#hitungmundur li p {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* TITIK DUA */
+#hitungmundur .separator {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 12px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 599px) {
+  #hitungmundur li span {
+    min-width: 55px;
+    font-size: 1.6rem;
+    padding: 10px 6px;
+  }
+
+  #hitungmundur li p {
+    font-size: 0.65rem;
+  }
+}
+
+#hitungmundur li p.days_text,
+#hitungmundur li p.hours_text,
+#hitungmundur li p.minutes_text,
+#hitungmundur li p.seconds_text {
+  color: #333 !important;
+}
+
+/* ======================
+   SECTION AYAT AL-QURAN
+====================== */
+
+.section-ayat {
+  padding: 100px 40px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.92)
+  ),;
+  background-color: #EEE6F7 ;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 300px;
+}
+
+/* Judul */
+.section-ayat-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b4e71; /* ungu lembut */
+  margin-bottom: 60px;
+}
+
+/* Kotak ayat */
+.ayat-box {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #6b4e71;
+}
+
+/* Ayat Arab */
+.ayat-arab {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #2e2e2e;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 25px;
+}
+
+/* Arti ayat */
+.ayat-arti {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Sumber ayat */
+.ayat-sumber {
+  font-size: 0.9rem;
+  color: #6b4e71;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ======================
+   RESPONSIVE (HP)
+====================== */
+@media (max-width: 768px) {
+
+  .section-ayat {
+    padding: 70px 20px;
+  }
+
+  .section-ayat-title {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  .ayat-box {
+    padding: 30px 20px;
+  }
+
+  .ayat-arab {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .ayat-arti {
+    font-size: 0.95rem;
+  }
+}
+
+
 
