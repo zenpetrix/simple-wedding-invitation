@@ -16,7 +16,7 @@ html {
 }
 
 .header-wrapper {
-  padding-bottom: 30px;
+  padding-bottom: px;
 }
 
 .navbar-item {
@@ -38,8 +38,8 @@ html {
 
 
 .hero {
-  background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(106, 76, 147, 0.75), rgba(106, 76, 147, 0.75)), rgba(0, 0, 0, 0.4) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background-image: url("../image/bg_flower_ungu.png");
+  background: url("../image/backgroundgeds.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -55,12 +55,12 @@ html {
   transform: none;
   font-size: 5rem;
   padding-bottom: 5px;
-  color: whitesmoke;
+  color: gray;
 }
 
 .hero .subtitle {
   padding: 35px;
-  color: whitesmoke;
+  color: gray;
   font-size: 1.3rem;
 }
 
@@ -125,18 +125,24 @@ html {
 }
 
 .main-content {
-  padding-top: 2rem;
+  padding-top: rem;
   color: #000; 
   font-family: 'Raleway', sans-serif;
 }
 
 .main-content .section-dark {
-  background-color: #F3EDF9;
+  background-image: url("../image/bg_flower_lain.png");
+  background: url("../image/background_gedi.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 80px 40px;
 }
 
-.main-content .section-darker {
-  background-color: #E6DCF4;
+.main-content .section-lokasi {
+  background-image: url("../image/bg_flower_ungu.png");
+  background: url("../image/background_geda.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 80px 40px;
 }
 
@@ -206,57 +212,81 @@ html {
   padding: 0 0 0 0 ;
 }
 
-.main-content .section-light {
+
+
+.main-content .section-nama {
+  background-image: url("../image/bg_flower_lain.png");
+  background: url("../image/background_gedi.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 80px 40px;
 }
 
-.main-content .section-light.regular-section {
+.main-content .section-ucapan {
+  background-image: url("../image/bg_flower_lain.png");
+  background: url("../image/background_gedi.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 40px;
+}
+
+.main-content .section-thanks {
+  background-image: url("../image/bg_flower_lain.png");
+  background: url("../image/background_geda.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 40px;
+}
+
+
+
+.main-content .section-nama.regular-section {
   padding-bottom: 80px;
 }
 
-.main-content .section-light.regular-section .is-larger {
+.main-content .section-nama.regular-section .is-larger {
   font-size: 1.2rem;
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.regular-section .about-links {
+  .main-content .section-nama.regular-section .about-links {
     text-align: center;
   }
 }
 
-.main-content .section-light.regular-section .right-image img {
+.main-content .section-nama.regular-section .right-image img {
   border-radius: 11px;
   margin: 20px;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.regular-section .right-image img {
+  .main-content .section-nama.regular-section .right-image img {
     margin: auto;
   }
 }
 
-.main-content .section-light.skills {
+.main-content .section-nama.skills {
   padding: 100px;
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.skills {
+  .main-content .section-nama.skills {
     padding: 50px 20px 40px 20px;
     padding-bottom: 20px;
   }
 }
 
-.main-content .section-light.skills h1 {
+.main-content .section-nama.skills h1 {
   padding: 10px;
   font-size: 24px;
 }
 
-.main-content .section-light.contact {
+.main-content .section-nama.contact {
   padding: 80px;
 }
 
-.main-content .section-light.contact button {
+.main-content .section-nama.contact button {
   width: 100%;
   color: white;
   height: 50px;
@@ -266,7 +296,7 @@ html {
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.contact {
+  .main-content .section-nama.contact {
     padding: 80px 40px;
   }
 }
@@ -351,7 +381,7 @@ vertical-align: middle;
   text-align: center;
   vertical-align: middle;
   background: #c28285;
-  color: whitesmoke;    
+  color: gray;    
 }
 
 .footer p {
@@ -375,7 +405,7 @@ vertical-align: middle;
 }
 
 .footer a .nav-item {
-  color: whitesmoke;
+  color: gray;
 }
 
 .fa-download {
@@ -554,9 +584,9 @@ body.preloader-site {
 
 
 .dusty-pink {color: #D8A9A8}
-.dusty-pink-lighter {color: #E6DCF4}
-.dusty-pink-lightest {color: #F3EDF9}
-.dusty-pink-darker {color: #8F6BC2}
+.dusty-pink-namaer {color: #E6DCF4}
+.dusty-pink-namaest {color: #F3EDF9}
+.dusty-pink-lokasi {color: #8F6BC2}
 .dusty-pink-darkest {color: #6A4C93}
 
 .tile {
@@ -635,7 +665,7 @@ body.preloader-site {
   color: white;
 }
 
-.section-light {
+.section-nama {
   background-image: url(../image/divider-flowers-leaves.png);
   background-position: bottom -30px center;
   background-repeat: no-repeat;
@@ -821,15 +851,15 @@ body.preloader-site {
 ====================== */
 
 .section-ayat {
-  padding: 100px 40px;
+  padding: 80px 40px;
   background: linear-gradient(
     rgba(255, 255, 255, 0.92),
     rgba(255, 255, 255, 0.92)
   ),;
-  background-color: #EEE6F7 ;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 300px;
+  background-image: url("../image/bg_flower_lain.png");
+  background: url("../image/background_geda.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Judul */
