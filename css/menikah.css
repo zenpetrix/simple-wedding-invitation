@@ -38,36 +38,58 @@ html {
 
 
 .hero {
-  background-image: url("../image/bg_flower_ungu.png");
-  background: url("../image/backgroundgeds.png") no-repeat;
+  background-image: url("../image/1.png");
+  background: url("../image/1.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
+  padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
+}
+
+.hero .title .name {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1.1;
+  color: #7A5C2E;
+  letter-spacing: 6px;
+  display: block;
 }
 
 
+.hero .title .and {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  margin:0;
+  line-height: 1.1;
+  display: block;
+}
 
 .hero .title {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 700;
-  transform: none;
-  font-size: 5rem;
-  padding-bottom: 5px;
-  color: gray;
+  line-height: 1.2;
+}
+
+.hero .title .and {
+  margin: 10px 0;
 }
 
 .hero .subtitle {
+  margin-top: -50px;
   padding: 35px;
-  color: gray;
-  font-size: 1.3rem;
+  color: #8C6B3D;
+  font-size: 2rem;
 }
 
-.hero .tempatwaktu {
+.hero .subtitle-tempatwaktu .bodytext {
   padding-top: 35px;
-  font-size: 1.3rem;
-  
+  font-size: 4rem;
 }
 
 .hero .hero-foot {
@@ -132,18 +154,43 @@ html {
 
 .main-content .section-dark {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/4.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
+}
+
+.main-content .section-tanggal {
+  background-image: url("../image/bg_flower_ungu.png");
+  background: url("../image/5.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 40px;
+  padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
 }
 
 .main-content .section-lokasi {
   background-image: url("../image/bg_flower_ungu.png");
-  background: url("../image/background_geda.png") no-repeat;
+  background: url("../image/6.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
+   padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
 }
 
 .main-content .section-dark.resume {
@@ -216,15 +263,21 @@ html {
 
 .main-content .section-nama {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/3.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
+   padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
 }
 
 .main-content .section-ucapan {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_gedi.png") no-repeat;
+  background: url("../image/7.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
@@ -232,10 +285,16 @@ html {
 
 .main-content .section-thanks {
   background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_geda.png") no-repeat;
+  background: url("../image/8.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
+   padding: 80px 40px;
+  min-height: 100vh;       /* tinggi penuh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* konten tetap di tengah */
+  background-size: cover;  /* biar background ikut penuh */
 }
 
 
@@ -327,19 +386,53 @@ html {
   padding-bottom: 60px;
 }
 
+.bride {
+  font-family: 'Cherry Blossom Script', cursive; /* atau Cherry Blossoms */
+  font-size: 25px;   /* judul besar */
+  text-align: right; /* geser ke kanan */
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
 .nama-lengkap {
-  font-family: 'Playfair Display', sans-serif;
-  color: #6A4C93;
-  font-size: 3.2rem;
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 20px;
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
+} 
+
+.anakdari {
+ text-align: center ;
+ transform: translateX(-120px);
+ margin-left: 20px;
+ letter-spacing: 0px; 
 }
 
+.nama-lengkap1 {
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 20px;
+  letter-spacing: 0px;
+  padding-bottom: 6px;
+  line-height: 3.7rem;
+  margin-top: 30px;
+}
+
+.anakdari1 {
+ text-align: center ;
+ transform: translateX(125px);
+ margin-left: 20px;
+ letter-spacing: 0px; 
+}
 .ampersand {
-font-size: 5rem;
+margin-top: 30px;
+text-align: center;
+font-size: 25px;
 font-family: 'Rouge Script', sans-serif;
-color: #6A4C93;
 line-height: 5rem;
 display: inline-block;
 vertical-align: middle;
@@ -350,23 +443,31 @@ vertical-align: middle;
 }
 
 .waktu {
-  font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+ font-family: 'Cherry Blossom Script', cursive;
+ font-size: 25px;
+ text-align: center ;
+ transform: translateX(120px);
+ margin-left: 20px;
+ margin-top: 300px;
+ letter-spacing: 0px; 
 }
 
-.tanggal-angka {
-  font-size: 5rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  line-height: 1;
+.akad{
+ font-family: 'Cherry Blossom Script', cursive;
+ font-size: 25px;
+ text-align: center ;
+ transform: translateX(-120px);
+ margin-left: 20px;
+ letter-spacing: 0px; 
 }
 
 .tempat {
-  font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
-  font-size: ;
-  margin-bottom: 50px;
-}
+ font-family: 'Cherry Blossom Script', cursive;
+ font-size: 25px;
+ text-align: center ;
+ transform: translateX(120px);
+ margin-left: 20px;
+ letter-spacing: 0px; 
 
 
 .has-vertically-align {
@@ -779,19 +880,24 @@ body.preloader-site {
 /* ======================
    HITUNG MUNDUR / COUNTDOWN
 ====================== */
+.hitung {
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 25px;
+  text-align: center;
+}
 
 #hitungmundur {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* atau flex-start kalau mau kiri */
   align-items: center;
   gap: 12px;
   padding: 0;
-  margin: 30px auto;
+  margin: 30px 0;
   list-style: none;
 }
 
 #hitungmundur li {
-  list-style:;
+  list-style: none;
 }
 
 /* KOTAK ANGKA */
@@ -809,13 +915,32 @@ body.preloader-site {
 }
 
 /* TEKS (Hari, Jam, Menit, Detik) */
-#hitungmundur li p {
-  margin-top: 6px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #000;
+.hitung {
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 25px;
   text-align: center;
-  letter-spacing: 1px;
+}
+
+#hitungmundur {
+  display: flex;
+  justify-content: center;   /* center, bisa diganti flex-start kalau mau kiri */
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0;
+  margin: 30px 0;
+}
+
+#hitungmundur li {
+  list-style: none;
+}
+
+/* KOTAK ANGKA */
+#hitungmundur li span {
+  background: red; /* tes warna kontras */
+  color: white;
+}
+#hitungmundur li p {
+  color: black !important;
 }
 
 /* TITIK DUA */
@@ -839,27 +964,15 @@ body.preloader-site {
   }
 }
 
-#hitungmundur li p.days_text,
-#hitungmundur li p.hours_text,
-#hitungmundur li p.minutes_text,
-#hitungmundur li p.seconds_text {
-  color: #333 !important;
-}
-
 /* ======================
    SECTION AYAT AL-QURAN
 ====================== */
 
-.section-ayat {
-  padding: 80px 40px;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.92),
-    rgba(255, 255, 255, 0.92)
-  ),;
-  background-image: url("../image/bg_flower_lain.png");
-  background: url("../image/background_geda.png") no-repeat;
+.main-content .section-ayat {
+  background: url("../image/2.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding: 80px 40px;
 }
 
 /* Judul */
@@ -878,10 +991,6 @@ body.preloader-site {
   max-width: 900px;
   margin: 0 auto 50px auto;
   padding: 40px 30px;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-  border-left: 6px solid #6b4e71;
 }
 
 /* Ayat Arab */
